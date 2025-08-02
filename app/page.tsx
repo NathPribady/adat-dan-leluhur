@@ -17,7 +17,7 @@ export default function Component() {
     {
       date: "6 Agustus",
       theme: "Adat dan Ekologi",
-      speaker: "Afkar Aristoteles M",
+      speaker: "Afkar Aristoteles M, Mahasiswa S2 CRCS UGM",
       description: [
         "Memperkenalkan keragaman etika kepedulian leluhur dalam konteks ekologi yang beragam",
         "Melihat hubungan etis manusia-alam",
@@ -29,7 +29,7 @@ export default function Component() {
     {
       date: "13 Agustus",
       theme: "Kolonialisme & Orientalisme Pengetahuan Leluhur",
-      speaker: "Ikrana Ramadhani",
+      speaker: "Ikrana Ramadhani, Mahasiswa S2 CRCS UGM",
       description: [
         "Mempermasalahkan latar belakang kolonialitas yang menggeser paradigma",
         "Rasialisme dan peminggiran masyarakat adat",
@@ -39,7 +39,7 @@ export default function Component() {
     {
       date: "20 Agustus",
       theme: "Paradigma [Agama] Leluhur",
-      speaker: "Faiz Hosainie Rafsanjanie",
+      speaker: "Faiz Hosainie Rafsanjanie, Mahasiswa S2 CRCS UGM",
       description: [
         "Membongkar konstruksi, religion, din, dan agama kolonial",
         'Membantah konstruksi wacana "animisme", "dinamisme", dan "sinkretisme"',
@@ -49,8 +49,8 @@ export default function Component() {
     },
     {
       date: "27 Agustus",
-      theme: "Indigenous Methodology",
-      speaker: "Ikrana Ramadhani",
+      theme: "Riset Berbasis Adat",
+      speaker: "Ikrana Ramadhani, Mahasiswa S2 CRCS UGM",
       description: [
         "Implementasi etis pendekatan studi-studi di bidang Indigenitas",
         "Studi kasus: orientalis dan antropologi Barat yang hit-and-run dan misrekognisi tentang konsep yang hidup di masyarakat adat atau misrekognisi 'animisme', 'sinkretisme'",
@@ -59,8 +59,8 @@ export default function Component() {
     },
     {
       date: "3 September",
-      theme: "Indigenous and Gender",
-      speaker: "Mina Mangmah",
+      theme: "Adat and Gender",
+      speaker: "Mina Mangmah, Mahasiswa S2 CRCS UGM",
       description: [
         "Memperkenalkan konstruksi gender dalam pemahaman/penafsiran agama leluhur (Islam adat, Kristen adat, penghayat kepercayaan, dsb)",
         "Mendekolonisasi konsep gender",
@@ -71,7 +71,7 @@ export default function Component() {
     {
       date: "10 September",
       theme: "Filosofi Leluhur",
-      speaker: "Yohanes Leo",
+      speaker: "Yohanes Leo, Mahasiswa S2 CRCS UGM",
       description: [
         "Menyoal pendekatan agama leluhur dalam studi Humaniora",
         'Konsep materialisme baru dan vitalisme (pascahumanisme) serta merekonstruksi tubuh dalam pandangan "kebudayaan"',
@@ -81,7 +81,7 @@ export default function Component() {
     {
       date: "17 September",
       theme: "Ekspresi Leluhur dalam Kesenian",
-      speaker: "Putri",
+      speaker: "Putri Athifah Fitriah, Mahasiswa S2 CRCS UGM",
       description: [
         "Genealogi seni",
         "Pemisahan agama, budaya, dan seni sebagai praktik kolonial",
@@ -91,7 +91,7 @@ export default function Component() {
     {
       date: "24 September",
       theme: "Hak Masyarakat Adat/Leluhur: KBB, Kedaulatan, dan Kewargaan",
-      speaker: "Annisa",
+      speaker: "Annisa Qurrotul Ayuni, Mahasiswa S2 CRCS UGM",
       description: [
         "Mendekolonisasi hak dan HAM",
         "Politik Agama Resmi sebagai praktik kolonial",
@@ -499,7 +499,7 @@ export default function Component() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>{"©"} 2024 Logos ID. Semua hak dilindungi.</p>
+            <p>{"©"} 2025 Logos ID. Semua hak dilindungi.</p>
           </div>
         </div>
       </footer>
