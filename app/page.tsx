@@ -95,8 +95,9 @@ export default function Component() {
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-amber-600 to-red-600 rounded-lg"></div>
-              <span className="font-bold text-xl text-gray-900">Kelas Adat dan Leluhur</span>
+              <Link href="https://logosid.app" target="_blank" rel="noreferrer">
+                <Image src="/logos-id-logo.png" alt="Logos ID" width={120} height={40} className="h-10 w-auto" />
+              </Link>
             </div>
             <div className="hidden md:flex items-center space-x-6">
               <Link href="#about" className="text-gray-700 hover:text-amber-600 transition-colors">
@@ -199,30 +200,40 @@ export default function Component() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="text-center p-8 hover:shadow-lg transition-shadow">
-              <div className="w-24 h-24 bg-gradient-to-br from-amber-100 to-amber-200 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                <Image
-                  src="/placeholder.svg?height=60&width=60&text=Logos+ID"
-                  alt="Logos ID"
-                  width={60}
-                  height={60}
-                  className="rounded-lg"
-                />
-              </div>
-              <h3 className="font-semibold text-lg mb-2">Logos ID</h3>
-              <p className="text-sm text-gray-600">Publikasi, website, diskusi, dan moderator</p>
+              <Link href="https://logosid.app" target="_blank" rel="noreferrer">
+                <div className="w-24 h-24 bg-white rounded-lg mx-auto mb-4 flex items-center justify-center shadow-sm">
+                  <Image src="/logos-id-logo.png" alt="Logos ID" width={80} height={26} className="h-6 w-auto" />
+                </div>
+              </Link>
+              <h3 className="font-semibold text-lg mb-2">
+                <Link
+                  href="https://logosid.app"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-amber-600 transition-colors"
+                >
+                  Logos ID
+                </Link>
+              </h3>
+              <p className="text-sm text-gray-600">Pendidikan, Filsafat, Studi Disabilitas</p>
             </Card>
             <Card className="text-center p-8 hover:shadow-lg transition-shadow">
-              <div className="w-24 h-24 bg-gradient-to-br from-red-100 to-red-200 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                <Image
-                  src="/placeholder.svg?height=60&width=60&text=ICIR"
-                  alt="ICIR"
-                  width={60}
-                  height={60}
-                  className="rounded-lg"
-                />
-              </div>
-              <h3 className="font-semibold text-lg mb-2">ICIR</h3>
-              <p className="text-sm text-gray-600">Pembawa tema dan mengajak komunitas Adat</p>
+              <Link href="https://icir.or.id" target="_blank" rel="noreferrer">
+                <div className="w-24 h-24 bg-white rounded-lg mx-auto mb-4 flex items-center justify-center shadow-sm">
+                  <Image src="/icir-logo.png" alt="ICIR" width={60} height={60} className="h-12 w-auto" />
+                </div>
+              </Link>
+              <h3 className="font-semibold text-lg mb-2">
+                <Link
+                  href="https://icir.or.id"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-amber-600 transition-colors"
+                >
+                  ICIR
+                </Link>
+              </h3>
+              <p className="text-sm text-gray-600">Kolaborasi, Advokasi, Riset, Adat dan Agama Leluhur</p>
             </Card>
             <Card className="text-center p-8 hover:shadow-lg transition-shadow">
               <div className="w-24 h-24 bg-gradient-to-br from-orange-100 to-orange-200 rounded-lg mx-auto mb-4 flex items-center justify-center">
@@ -379,24 +390,6 @@ export default function Component() {
               ))}
             </div>
           </div>
-
-          {/* Call to Action */}
-          <div className="text-center mt-16">
-            <Card className="max-w-2xl mx-auto p-8 bg-gradient-to-r from-amber-50 to-red-50 border-0">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Siap Bergabung?</h3>
-              <p className="text-gray-600 mb-6">
-                Jangan lewatkan kesempatan untuk belajar bersama dalam ruang yang aman dan inklusif
-              </p>
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-amber-600 to-red-600 hover:from-amber-700 hover:to-red-700 px-8 py-3 text-lg"
-              >
-                <a href="https://logos-id.myr.id/pl/adat-dan-leluhur" target="_blank" rel="noreferrer">
-                  Daftar Sekarang
-                </a>
-              </Button>
-            </Card>
-          </div>
         </div>
       </section>
 
@@ -453,7 +446,7 @@ export default function Component() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Logos ID. Semua hak dilindungi.</p>
+            <p>{"©"} 2024 Logos ID. Semua hak dilindungi.</p>
           </div>
         </div>
       </footer>
