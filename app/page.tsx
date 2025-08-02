@@ -52,9 +52,10 @@ export default function Component() {
       theme: "Orientalisme",
       speaker: "Salamatun Nafi’ah, Mahasiswa S2 CRCS UGM",
       description: [
-        "Implementasi etis pendekatan studi-studi di bidang Indigenitas",
-        "Studi kasus: orientalis dan antropologi Barat yang hit-and-run dan misrekognisi tentang konsep yang hidup di masyarakat adat atau misrekognisi 'animisme', 'sinkretisme'",
-        "Etnografi kritis",
+        "Sejarah pandangan orintalisme dalam studi “Timur”",
+        "Kritik Richard King terhadap pandangan “Timur yang Mistis”",
+        "Studi kasus bagaimana pandangan “Timur yang Mistis” ini dikonstruksi dalam mempelajari agama-agama Timur",
+        "Refleksi tentang konstruksi “yang Mistis” terhadap pengetahuan lokal",
       ],
     },
     {
@@ -436,7 +437,7 @@ export default function Component() {
                   Pemantik diskusi harus membawa opini ATAU argumentasi dari materi bacaan:
                 </p>
                 <ul className="list-disc list-inside text-gray-700 space-y-2">
-                  <li>Apa yang harus organisasi non-profit/aktivis/akademisi/komunitas lakukan?</li>
+                  <li>Apa yang harus organisasi non-profit/aktivis/ akademisi/komunitas lakukan?</li>
                   <li>Bagaimana mengimplementasikan rekomendasi ini? Apa upaya advokasi yang perlu diperhitungkan?</li>
                 </ul>
               </CardContent>
