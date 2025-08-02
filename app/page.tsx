@@ -282,14 +282,8 @@ export default function Component() {
               <p className="text-sm text-gray-600">Kontributor metode surah untuk diskusi</p>
             </Card>
             <Card className="text-center p-8 hover:shadow-lg transition-shadow">
-              <div className="w-24 h-24 bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                <Image
-                  src="/placeholder.svg?height=60&width=60&text=Eonoiaco"
-                  alt="Eonoiaco"
-                  width={60}
-                  height={60}
-                  className="rounded-lg"
-                />
+              <div className="w-24 h-24 bg-white rounded-lg mx-auto mb-4 flex items-center justify-center shadow-sm">
+                <Image src="/eonoiaco-logo.png" alt="Eonoiaco" width={80} height={60} className="h-12 w-auto" />
               </div>
               <h3 className="font-semibold text-lg mb-2">Eonoiaco</h3>
               <p className="text-sm text-gray-600">Publikasi rangkuman di media sosial</p>
