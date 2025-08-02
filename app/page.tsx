@@ -275,14 +275,8 @@ export default function Component() {
               <p className="text-sm text-gray-600">Kolaborasi, Advokasi, Riset, Adat dan Agama Leluhur</p>
             </Card>
             <Card className="text-center p-8 hover:shadow-lg transition-shadow">
-              <div className="w-24 h-24 bg-gradient-to-br from-orange-100 to-orange-200 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                <Image
-                  src="/placeholder.svg?height=60&width=60&text=Gerakan+Surah+Buku"
-                  alt="Gerakan Surah Buku"
-                  width={60}
-                  height={60}
-                  className="rounded-lg"
-                />
+              <div className="w-24 h-24 bg-black rounded-lg mx-auto mb-4 flex items-center justify-center shadow-sm">
+                <Image src="/gsb-logo.png" alt="Gerakan Surah Buku" width={80} height={60} className="h-12 w-auto" />
               </div>
               <h3 className="font-semibold text-lg mb-2">Gerakan Surah Buku</h3>
               <p className="text-sm text-gray-600">Kontributor metode surah untuk diskusi</p>
