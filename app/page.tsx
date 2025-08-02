@@ -18,49 +18,88 @@ export default function Component() {
       date: "6 Agustus",
       theme: "Adat dan Ekologi",
       speaker: "Afkar Aristoteles M",
-      description: "Memperkenalkan keragaman etika kepedulian leluhur dalam konteks ekologi yang beragam.",
+      description: [
+        "Memperkenalkan keragaman etika kepedulian leluhur dalam konteks ekologi yang beragam",
+        "Melihat hubungan etis manusia-alam",
+        "Bagaimana alam dikonstruksikan lewat peta",
+        "Studi kasus: UU KSDAE, Mollo-Gunung Mutis, dan Industri Geothermal",
+        "Mendorong peneliti dan praktisi menyelaraskan pandangan dan melaksanakan pendekatan etis demi mendukung pemberdayaan masyarakat",
+      ],
     },
     {
       date: "13 Agustus",
       theme: "Kolonialisme & Orientalisme Pengetahuan Leluhur",
       speaker: "Ikrana Ramadhani",
-      description: "Mempermasalahkan latar belakang kolonialitas yang menggeser paradigma.",
+      description: [
+        "Mempermasalahkan latar belakang kolonialitas yang menggeser paradigma",
+        "Rasialisme dan peminggiran masyarakat adat",
+        "Mendekolonisasi pengetahuan menjadi relasional",
+      ],
     },
     {
       date: "20 Agustus",
       theme: "Paradigma [Agama] Leluhur",
       speaker: "Faiz Hosainie Rafsanjanie",
-      description: "Membongkar konstruksi, religion, din, dan agama kolonial.",
+      description: [
+        "Membongkar konstruksi, religion, din, dan agama kolonial",
+        'Membantah konstruksi wacana "animisme", "dinamisme", dan "sinkretisme"',
+        "Hubungan etis dalam agama leluhur dan masyarakat adat: relasional, timbal balik, dan tanggung jawab",
+        "Melihat bahwa semua tindak-tanduk merupakan 'beradat' atau 'relijius' sekaligus",
+      ],
     },
     {
       date: "27 Agustus",
       theme: "Indigenous Methodology",
       speaker: "Ikrana Ramadhani",
-      description: "Implementasi etis pendekatan studi-studi di bidang Indigenitas.",
+      description: [
+        "Implementasi etis pendekatan studi-studi di bidang Indigenitas",
+        "Studi kasus: orientalis dan antropologi Barat yang hit-and-run dan misrekognisi tentang konsep yang hidup di masyarakat adat atau misrekognisi 'animisme', 'sinkretisme'",
+        "Etnografi kritis",
+      ],
     },
     {
       date: "3 September",
       theme: "Indigenous and Gender",
       speaker: "Mina Mangmah",
-      description: "Memperkenalkan konstruksi gender dalam pemahaman/penafsiran agama leluhur.",
+      description: [
+        "Memperkenalkan konstruksi gender dalam pemahaman/penafsiran agama leluhur (Islam adat, Kristen adat, penghayat kepercayaan, dsb)",
+        "Mendekolonisasi konsep gender",
+        "Emansipasi dan advokasi gender masyarakat leluhur",
+        "Antara SOGIESC dan adat",
+      ],
     },
     {
       date: "10 September",
       theme: "Filosofi Leluhur",
       speaker: "Yohanes Leo",
-      description: "Menyoal pendekatan agama leluhur dalam studi Humaniora.",
+      description: [
+        "Menyoal pendekatan agama leluhur dalam studi Humaniora",
+        'Konsep materialisme baru dan vitalisme (pascahumanisme) serta merekonstruksi tubuh dalam pandangan "kebudayaan"',
+        "Rekomendasi saran terhadap studi Antropologi serta Sosiologi",
+      ],
     },
     {
       date: "17 September",
       theme: "Ekspresi Leluhur dalam Kesenian",
-      speaker: "Putri Athifah Fitriah",
-      description: "Genealogi seni dan praktik seni sebagai sumber pengetahuan leluhur.",
+      speaker: "Putri",
+      description: [
+        "Genealogi seni",
+        "Pemisahan agama, budaya, dan seni sebagai praktik kolonial",
+        "Praktik seni sebagai sumber pengetahuan leluhur",
+      ],
     },
     {
       date: "24 September",
-      theme: "Hak Masyarakat Adat/Leluhur",
-      speaker: "Annisa Qurrotul Ayuni",
-      description: "Mendekolonisasi hak dan HAM serta vernakularisasi HAM pada lokalitas.",
+      theme: "Hak Masyarakat Adat/Leluhur: KBB, Kedaulatan, dan Kewargaan",
+      speaker: "Annisa",
+      description: [
+        "Mendekolonisasi hak dan HAM",
+        "Politik Agama Resmi sebagai praktik kolonial",
+        "Vernakularisasi dan localization HAM pada lokalitas",
+        "Hak masyarakat adat dan FoRB untuk penghayat kepercayaan dan agama leluhur",
+        "Mengelaborasikan konsep HAM dan FoRB",
+        "Mencari solusi bersama untuk rekognisi masyarakat adat dan agama leluhur",
+      ],
     },
   ]
 
@@ -328,7 +367,14 @@ export default function Component() {
                         </div>
                       </CardHeader>
                       <CardContent>
-                        <p className="text-gray-600 leading-relaxed">{session.description}</p>
+                        <ul className="text-gray-600 leading-relaxed space-y-2">
+                          {session.description.map((point, pointIndex) => (
+                            <li key={pointIndex} className="flex items-start gap-2">
+                              <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
+                              <span>{point}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </CardContent>
                     </Card>
                   </div>
@@ -382,7 +428,14 @@ export default function Component() {
                         </div>
                       </CardHeader>
                       <CardContent>
-                        <p className="text-gray-600 leading-relaxed">{session.description}</p>
+                        <ul className="text-gray-600 leading-relaxed space-y-2">
+                          {session.description.map((point, pointIndex) => (
+                            <li key={pointIndex} className="flex items-start gap-2">
+                              <span className="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                              <span>{point}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </CardContent>
                     </Card>
                   </div>
