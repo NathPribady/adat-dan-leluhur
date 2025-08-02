@@ -49,8 +49,8 @@ export default function Component() {
     },
     {
       date: "27 Agustus",
-      theme: "Riset Berbasis Adat",
-      speaker: "Ikrana Ramadhani, Mahasiswa S2 CRCS UGM",
+      theme: "Orientalisme",
+      speaker: "Salamatun Nafi’ah, Mahasiswa S2 CRCS UGM",
       description: [
         "Implementasi etis pendekatan studi-studi di bidang Indigenitas",
         "Studi kasus: orientalis dan antropologi Barat yang hit-and-run dan misrekognisi tentang konsep yang hidup di masyarakat adat atau misrekognisi 'animisme', 'sinkretisme'",
@@ -145,6 +145,9 @@ export default function Component() {
               <Link href="#schedule" className="text-gray-700 hover:text-amber-600 transition-colors">
                 Jadwal
               </Link>
+              <Link href="#learning-method" className="text-gray-700 hover:text-amber-600 transition-colors">
+                Metode Pembelajaran
+              </Link>
               <Link href="#partners" className="text-gray-700 hover:text-amber-600 transition-colors">
                 Kolaborasi
               </Link>
@@ -204,15 +207,15 @@ export default function Component() {
       </section>
 
       {/* Objectives Section */}
-      <section id="about" className="py-20 px-4 bg-white">
+      <section id="about" className="py-12 px-4 bg-white">
         <div className="container mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Tujuan Utama</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Membangun pemahaman yang mendalam tentang pengetahuan leluhur dan pendekatan Adat
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {objectives.map((objective, index) => (
               <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <CardHeader className="text-center pb-4">
@@ -226,79 +229,6 @@ export default function Component() {
                 </CardContent>
               </Card>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Partners Section */}
-      <section id="partners" className="py-20 px-4 bg-gradient-to-r from-amber-50 to-red-50">
-        <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Kolaborasi</h2>
-            <p className="text-xl text-gray-600">Kerjasama lintas organisasi untuk pendidikan yang inklusif</p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Card className="text-center p-8 hover:shadow-lg transition-shadow">
-              <Link href="https://logosid.app" target="_blank" rel="noreferrer">
-                <div className="w-24 h-24 bg-white rounded-lg mx-auto mb-4 flex items-center justify-center shadow-sm">
-                  <Image src="/logos-id-logo.png" alt="Logos ID" width={80} height={26} className="h-6 w-auto" />
-                </div>
-              </Link>
-              <h3 className="font-semibold text-lg mb-2">
-                <Link
-                  href="https://logosid.app"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-amber-600 transition-colors"
-                >
-                  Logos ID
-                </Link>
-              </h3>
-              <p className="text-sm text-gray-600">Pendidikan, Filsafat, Studi Disabilitas</p>
-            </Card>
-            <Card className="text-center p-8 hover:shadow-lg transition-shadow">
-              <Link href="https://icir.or.id" target="_blank" rel="noreferrer">
-                <div className="w-24 h-24 bg-white rounded-lg mx-auto mb-4 flex items-center justify-center shadow-sm">
-                  <Image src="/icir-logo.png" alt="ICIR" width={60} height={60} className="h-12 w-auto" />
-                </div>
-              </Link>
-              <h3 className="font-semibold text-lg mb-2">
-                <Link
-                  href="https://icir.or.id"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-amber-600 transition-colors"
-                >
-                  ICIR
-                </Link>
-              </h3>
-              <p className="text-sm text-gray-600">Kolaborasi, Advokasi, Riset, Adat dan Agama Leluhur</p>
-            </Card>
-            <Card className="text-center p-8 hover:shadow-lg transition-shadow">
-              <Link href="https://surahbuku.com" target="_blank" rel="noreferrer">
-                <div className="w-24 h-24 bg-black rounded-lg mx-auto mb-4 flex items-center justify-center shadow-sm">
-                  <Image src="/gsb-logo.png" alt="Gerakan Surah Buku" width={80} height={60} className="h-12 w-auto" />
-                </div>
-              </Link>
-              <h3 className="font-semibold text-lg mb-2">
-                <Link
-                  href="https://surahbuku.com"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-amber-600 transition-colors"
-                >
-                  Gerakan Surah Buku
-                </Link>
-              </h3>
-              <p className="text-sm text-gray-600">Kontributor metode surah dalam diskusi</p>
-            </Card>
-            <Card className="text-center p-8 hover:shadow-lg transition-shadow">
-              <div className="w-24 h-24 bg-white rounded-lg mx-auto mb-4 flex items-center justify-center shadow-sm">
-                <Image src="/eonoiaco-logo.png" alt="Eonoiaco" width={80} height={60} className="h-12 w-auto" />
-              </div>
-              <h3 className="font-semibold text-lg mb-2">Eonoiaco</h3>
-              <p className="text-sm text-gray-600">Publikasi rangkuman di media sosial</p>
-            </Card>
           </div>
         </div>
       </section>
@@ -441,6 +371,149 @@ export default function Component() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Learning Method Section */}
+      <section id="learning-method" className="py-12 px-4 bg-white">
+        <div className="container mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Metode Pembelajaran</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Kelas akan diadakan setiap Rabu pukul 19:30 WIB sejak 6 Agustus hingga 24 September dengan beragam topik.
+              Namun, tidak menutup kemungkinan, pembahasan akan diperpanjang dengan mempertimbangkan topik lainnya yang
+              berkaitan dengan masyarakat adat dan kepercayaan leluhur.
+            </p>
+          </div>
+          <div className="flex overflow-x-auto snap-x snap-mandatory pb-4 space-x-6 lg:space-x-8">
+            {/* Slide 1 */}
+            <Card className="flex-none w-80 md:w-72 snap-center p-4 bg-gradient-to-br from-amber-50 to-red-50">
+              <CardHeader>
+                <CardTitle className="text-xl font-bold text-gray-900 mb-2">Pengantar & Kritisisme</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-700 leading-relaxed">
+                  Pengantar terhadap tema diskusi (etika, kolonialitas, paradigma) dan kritisisme terhadapnya.
+                </p>
+              </CardContent>
+            </Card>
+            {/* Slide 2 */}
+            <Card className="flex-none w-80 md:w-72 snap-center p-4 bg-gradient-to-br from-amber-50 to-red-50">
+              <CardHeader>
+                <CardTitle className="text-xl font-bold text-gray-900 mb-2">Problematisasi Kontekstual</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Pemantik diskusi akan memberikan studi kasus yang bisa didiskusikan dan dikritisi, meliputi:
+                </p>
+                <ul className="list-disc list-inside text-gray-700 space-y-2">
+                  <li>Relasi kuasa</li>
+                  <li>Paradigma liberal</li>
+                  <li>Politik</li>
+                </ul>
+              </CardContent>
+            </Card>
+            {/* Slide 3 */}
+            <Card className="flex-none w-80 md:w-72 snap-center p-4 bg-gradient-to-br from-amber-50 to-red-50">
+              <CardHeader>
+                <CardTitle className="text-xl font-bold text-gray-900 mb-2">Kontekstualisasi Konsep Adat</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-700 leading-relaxed">
+                  Kontekstualisasi konsep Adat sebagai alat untuk mengkritik tema diskusi (etika Adat, dekolonisasi,
+                  paradigma Adat, dsb).
+                </p>
+              </CardContent>
+            </Card>
+            {/* Slide 4 */}
+            <Card className="flex-none w-80 md:w-72 snap-center p-4 bg-gradient-to-br from-amber-50 to-red-50">
+              <CardHeader>
+                <CardTitle className="text-xl font-bold text-gray-900 mb-2">Rekomendasi</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Pemantik diskusi harus membawa opini ATAU argumentasi dari materi bacaan:
+                </p>
+                <ul className="list-disc list-inside text-gray-700 space-y-2">
+                  <li>Apa yang harus organisasi non-profit/aktivis/akademisi/komunitas lakukan?</li>
+                  <li>Bagaimana mengimplementasikan rekomendasi ini? Apa upaya advokasi yang perlu diperhitungkan?</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Partners Section */}
+      <section id="partners" className="py-20 px-4 bg-gradient-to-r from-amber-50 to-red-50">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Kolaborasi</h2>
+            <p className="text-xl text-gray-600">Kerjasama lintas organisasi untuk pendidikan yang inklusif</p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card className="text-center p-8 hover:shadow-lg transition-shadow">
+              <Link href="https://logosid.app" target="_blank" rel="noreferrer">
+                <div className="w-24 h-24 bg-white rounded-lg mx-auto mb-4 flex items-center justify-center shadow-sm">
+                  <Image src="/logos-id-logo.png" alt="Logos ID" width={80} height={26} className="h-6 w-auto" />
+                </div>
+              </Link>
+              <h3 className="font-semibold text-lg mb-2">
+                <Link
+                  href="https://logosid.app"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-amber-600 transition-colors"
+                >
+                  Logos ID
+                </Link>
+              </h3>
+              <p className="text-sm text-gray-600">Pendidikan, Filsafat, Studi Disabilitas</p>
+            </Card>
+            <Card className="text-center p-8 hover:shadow-lg transition-shadow">
+              <Link href="https://icir.or.id" target="_blank" rel="noreferrer">
+                <div className="w-24 h-24 bg-white rounded-lg mx-auto mb-4 flex items-center justify-center shadow-sm">
+                  <Image src="/icir-logo.png" alt="ICIR" width={60} height={60} className="h-12 w-auto" />
+                </div>
+              </Link>
+              <h3 className="font-semibold text-lg mb-2">
+                <Link
+                  href="https://icir.or.id"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-amber-600 transition-colors"
+                >
+                  ICIR
+                </Link>
+              </h3>
+              <p className="text-sm text-gray-600">Kolaborasi, Advokasi, Riset, Adat dan Agama Leluhur</p>
+            </Card>
+            <Card className="text-center p-8 hover:shadow-lg transition-shadow">
+              <Link href="https://surahbuku.com" target="_blank" rel="noreferrer">
+                <div className="w-24 h-24 bg-black rounded-lg mx-auto mb-4 flex items-center justify-center shadow-sm">
+                  <Image src="/gsb-logo.png" alt="Gerakan Surah Buku" width={80} height={60} className="h-12 w-auto" />
+                </div>
+              </Link>
+              <h3 className="font-semibold text-lg mb-2">
+                <Link
+                  href="https://surahbuku.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-amber-600 transition-colors"
+                >
+                  Gerakan Surah Buku
+                </Link>
+              </h3>
+              <p className="text-sm text-gray-600">Kontributor metode surah dalam diskusi</p>
+            </Card>
+            <Card className="text-center p-8 hover:shadow-lg transition-shadow">
+              <div className="w-24 h-24 bg-white rounded-lg mx-auto mb-4 flex items-center justify-center shadow-sm">
+                <Image src="/eonoiaco-logo.png" alt="Eonoiaco" width={80} height={60} className="h-12 w-auto" />
+              </div>
+              <h3 className="font-semibold text-lg mb-2">Eonoiaco</h3>
+              <p className="text-sm text-gray-600">Publikasi rangkuman di media sosial</p>
+            </Card>
           </div>
         </div>
       </section>
