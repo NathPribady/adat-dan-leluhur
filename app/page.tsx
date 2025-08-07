@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Calendar, Clock, MapPin, Users, BookOpen, Target, Lightbulb } from "lucide-react"
+import { Calendar, Clock, MapPin, Users, BookOpen, Target, Lightbulb } from 'lucide-react'
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
@@ -305,6 +305,63 @@ export default function Component() {
                             </li>
                           ))}
                         </ul>
+                        {index === 0 && (
+                          <div className="mt-6 space-y-3">
+                            <div className="flex flex-wrap gap-2">
+                              <Button size="sm" className="bg-red-600 hover:bg-red-700 text-white">
+                                <a
+                                  href="https://youtu.be/l8IgkfAhZaQ"
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  className="flex items-center gap-2"
+                                >
+                                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                                  </svg>
+                                  Tonton Rekaman
+                                </a>
+                              </Button>
+                              <Button size="sm" variant="outline">
+                                <a
+                                  href="https://drive.google.com/file/d/1ENfpAGqCoDOFGT6U-R5D9DV6YmZ5F_xM/view?usp=sharing"
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  className="flex items-center gap-2"
+                                >
+                                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+                                  </svg>
+                                  Lihat Slide
+                                </a>
+                              </Button>
+                            </div>
+                            <div>
+                              <h4 className="font-semibold text-gray-900 mb-2">Bacaan Lanjutan:</h4>
+                              <ul className="space-y-1 text-sm">
+                                <li>
+                                  <a
+                                    href="https://drive.google.com/file/d/1pkI6VnvSwHWFTUMhZF5c3ytVyCOW37uD/view?usp=sharing"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="text-amber-600 hover:text-amber-700 underline"
+                                  >
+                                    Alessandro Pelizzon - Ecological Jurisprudence
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://drive.google.com/file/d/1Chqu942lsyvTfo1sBRn1SRrLSxHYFc8w/view?usp=sharing"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="text-amber-600 hover:text-amber-700 underline"
+                                  >
+                                    Mihnea Tănăsescu - Understanding the Rights of Nature
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        )}
                       </CardContent>
                     </Card>
                   </div>
